@@ -52,20 +52,20 @@ CREATE TABLE "Titles" (
 );
 
 ALTER TABLE "Dept_emp" ADD CONSTRAINT "fk_Dept_emp_emp_no" FOREIGN KEY("emp_no")
-REFERENCES "Employees" ("");
+REFERENCES "Employees" ("emp_no");
 
 ALTER TABLE "Dept_emp" ADD CONSTRAINT "fk_Dept_emp_dept_no" FOREIGN KEY("dept_no")
-REFERENCES "Departements" ("");
+REFERENCES "Departements" ("dept_no");
 
 ALTER TABLE "Dept_manager" ADD CONSTRAINT "fk_Dept_manager_dept_no" FOREIGN KEY("dept_no")
-REFERENCES "Departements" ("");
+REFERENCES "Departements" ("dept_no");
 
 ALTER TABLE "Dept_manager" ADD CONSTRAINT "fk_Dept_manager_emp_no" FOREIGN KEY("emp_no")
-REFERENCES "Employees" ("");
+REFERENCES "Employees" ("emp_no");
 
 ALTER TABLE "Salaries" ADD CONSTRAINT "fk_Salaries_emp_no" FOREIGN KEY("emp_no")
-REFERENCES "Employees" ("");
+REFERENCES "Employees" ("emp_no");
 
 ALTER TABLE "Titles" ADD CONSTRAINT "fk_Titles_emp_no" FOREIGN KEY("emp_no")
-REFERENCES "Employees" ("");
+REFERENCES "Employees" ("emp_no");
 
